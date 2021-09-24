@@ -1,6 +1,4 @@
 html, body{
-
-    width: 100%;
     font-size: 11pt;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -26,28 +24,23 @@ html, body{
 }
 
 #plane, #train, #car{
-
    width: 15%; 
    margin: 0 auto;
    margin-top: 4%;
    display: block;
-
 }
 
 img{
     width: 100%;
-
 }
 
 .button{
-
     width: 70%;
     border-radius: 20px;
     background-color: #C4B2AF;
     margin: 0 auto;
     padding: 10px;
     align-items: center;
-
 }
 
 .button a{
@@ -59,25 +52,21 @@ img{
 
 .info-text{
     display: block;
-
 }
 
 .info-text ul{
     list-style:none;
     padding-left: 5%;
-
 }
 
 .info-text li{
     margin-top: 2%;
     font-size: 1.2rem;
-
 }
 
 .info-text h1{
     text-align: center;
     margin-top: 0;
-
 }
 
 header{
@@ -87,7 +76,6 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
 }
 
 #heading{
@@ -102,9 +90,9 @@ header{
     width: 80%;
     border-radius: 3px;
 }
+
 #heading-text h1{
     text-align: center;
-
 }
 
 #picture-wrapper{
@@ -118,7 +106,6 @@ header{
     width: 90%;
     margin: 0 auto;
     padding-top: 5%;
-
 }
 .image{
     width: 100%;
@@ -146,7 +133,6 @@ header{
 #travel-options-text{
     width: 90%;
     margin: 0 auto;
-
 }
 
 @media screen and (min-width: 768px){
@@ -160,7 +146,6 @@ header{
     }
 
     #first, #second, #third{
-
         width: 45%;
         height: 50vh;
     }    
@@ -184,9 +169,7 @@ header{
     }
 
     #first, #second, #third{
-
         width: 30%;
-        height: 45vh;
     }
     
     #heading-text{
@@ -194,14 +177,13 @@ header{
     }
 
     #picture-wrapper{
-
         width: 70%;
-        margin: 0 auto; }
+        margin: 0 auto; 
+    }
 
     #intro-text{
         width: 65%;
         margin: 0 auto;
-
     }
 
 }

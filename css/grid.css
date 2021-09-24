@@ -1,61 +1,79 @@
 html, body{
-    margin: 0;
-
+        font-size: 11pt;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
 }
+
 #wrapper{
     margin-top: 0;  
     display: grid;
-    grid-template-rows: 1fr 5fr 1fr;
-    grid-template-columns: 1fr 3fr 6fr 6fr 3fr 1fr;
-    height: 100vh;
+    grid-template-rows: 1fr 4fr 4fr 4fr 4fr 1fr;
+    grid-template-columns: 1fr 6fr 1fr;
+    height: 200vh;
     grid-template-areas: 
-    "header header header header header header"
-    ". left main-left main-right right ."
-    "footer footer footer footer footer footer";
+    "header header header"
+    ". quote-one ."
+    ". quote-two ."
+    ". quote-three ."
+    ". quote-four ."
+    "footer footer footer";
     column-gap: 2%;
     row-gap: 2%;
 }
 
-#wrapper div{
-    border: 2px solid black;
-}
 #header{
     grid-area: header;
+    background-color: #8D394D;    
+    text-align: center;
+    color: white;
 }
 
-#left{
-    grid-area: left;
+#quote-one{
+    grid-area: quote-one;
+    background-color: #BA808F;
 }
 
-#right{
-    grid-area: right;
+#quote-two{
+    grid-area: quote-two;
+    background-color: #6D7265;
 }
 
-#main-left{
-    grid-area: main-left;
+#quote-three{
+    grid-area: quote-three;
+    background-color: #AE8B81;
+
 }
 
-#main-right{
-    grid-area: main-right;
+#quote-four{
+    grid-area: quote-four;
+    background-color: #A18357;
 }
 
 #footer{
     grid-area: footer;
 }
 
+#quote-text{
+    width: 85%;
+    margin: 0 auto;
+    align-items: center;
+    grid-area: main;
+}
+
+#quote-one, #quote-two, #quote-three, #quote-four{
+
+    display: grid;
+ 
+
 @media screen and (min-width:768px){
     #wrapper{
-        margin-top: 0;
-        display: grid;
-        grid-template-rows: 1fr 5fr 1fr;
+
         grid-template-columns: 1fr 3fr 6fr 6fr 3fr 1fr;
-        height: 100vh;
         grid-template-areas: 
         "header header header header header header"
-        ". left main-left main-right right ."
+        ". quote-one quote-two quote-three quote-four ."
         "footer footer footer footer footer footer";
-        column-gap: 2%;
-        row-gap: 2%;
     }
+
 
 }

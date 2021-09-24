@@ -1,0 +1,54 @@
+html, body{
+    margin: 0;
+
+}
+#wrapper{
+    margin-top: 0;
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-columns: 1fr 3fr 5fr 5fr 3fr 1fr;
+    height: 100vh;
+    grid-template-areas: 
+    "header header header header header header"
+    ". left main-left main-right right ."
+    "footer footer footer footer footer footer";
+    column-gap: 10px;
+    row-gap: 15px
+}
+
+#wrapper div{
+    border: 2px solid black;
+
+}
+#header{
+    grid-area: header;
+    background-color: lightpink;
+}
+
+#left{
+    grid-area: left;
+    background-color: lightpink;
+}
+
+#right{
+    grid-area: right;
+    background-color: lightpink;
+}
+
+#main-left{
+    grid-area: main-left;
+    background-color: lightskyblue;
+
+}
+
+#main-right{
+    grid-area: main-right;
+    background-color: lightskyblue;
+
+}
+
+#footer{
+    grid-area: footer;
+    background-color: magenta;
+    
+}

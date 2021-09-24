@@ -1,0 +1,168 @@
+html, body{
+
+    width: 100%;
+    font-size: 11pt;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#first, #second, #third{
+
+    width: 90%;
+    height: 40vh;
+    background-color:rgb(255, 245, 248);
+    margin-bottom: 20px;
+}
+
+#plane, #train, #car{
+
+   width: 15%; 
+   margin: 0 auto;
+   margin-top: 4%;
+
+}
+
+img{
+    width: 100%;
+
+}
+
+.button{
+
+    width: 70%;
+    border-radius: 20px;
+    background-color: lightblue;
+    margin: 0 auto;
+    padding: 10px;
+
+}
+
+.button a{
+    display: block;
+    text-align: center;
+}
+
+.info-text ul{
+    list-style:none;
+    padding-left: 5%;
+
+}
+
+.info-text li{
+    margin-top: 2%;
+
+}
+
+.info-text h1{
+    text-align: center;
+
+}
+
+header{
+    width: 100%;
+    background-image: url("../image/annecy.jpeg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#heading-text{
+    background-color: rgb(244, 255, 255);
+    width: 80%;
+}
+#heading-text h1{
+    text-align: center;
+
+}
+
+
+#picture-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#info{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 5%;
+
+}
+.image{
+    width: 100%;
+
+}
+
+#travel-options{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#background-info{
+    background-color:rgb(239, 253, 253);
+
+}
+
+#info h1{
+    margin-top: 0;
+
+}
+
+@media screen and (min-width: 768px){
+
+    #wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap:wrap;
+    }
+
+    #first, #second, #third{
+
+        width: 45%;
+        height: 40vh;
+        background-color:rgb(255, 245, 248);
+    }
+    
+}
+
+@media screen and (min-width: 1024px){
+
+    #wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #first, #second, #third{
+
+        width: 30%;
+        height: 45vh;
+        background-color:rgb(255, 245, 248);
+    }
+    
+    #heading-text{
+        background-color: rgb(244, 255, 255);
+        width: 30%;
+    }
+
+}
